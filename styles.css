@@ -44,7 +44,7 @@ body {
   width: 100%;
   max-width: 960px;
   aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, #ffe5ec, #fffafc);
+  background: ('https://media.discordapp.net/attachments/1422164958845599744/1467474209143001333/IMG_8012.jpg?ex=698c60db&is=698b0f5b&hm=9c0b2d43193e3e286efdf57f6359cae4204b2e72987d377aa091eb2b9d4db5e9&=&format=webp&width=426&height=779');
   border-radius: 28px;
   box-shadow:
     0 24px 60px rgba(0, 0, 0, 0.55),
