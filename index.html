@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Love Mail ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="floating-hearts">
+        <div class="heart heart--1"></div>
+        <div class="heart heart--2"></div>
+        <div class="heart heart--3"></div>
+        <div class="heart heart--4"></div>
+        <div class="heart heart--5"></div>
+      </div>
+      <div class="app-inner">
+        <header>
+          <div class="brand">
+            <span class="script">Love</span>
+            <span>Mail</span>
+          </div>
+          <div class="meta">
+            <div><strong>To:</strong> Fatima May</div>
+            <div><strong>From:</strong> Your Fay</div>
+          </div>
+        </header>
+
+        <main>
+          <!-- Screen 1: Envelope intro -->
+          <section class="screen screen--active" data-screen="1">
+            <div class="title">Love Mail</div>
+            <p class="subtitle">Click the envelope to open.</p>
+            <div class="envelope-wrapper" id="js-envelope-trigger" aria-label="Open Love Mail" role="button">
+              <div class="envelope" id="js-envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+                <div class="envelope-paper">
+                  <div class="envelope-paper-inner">
+                    <strong>To the love of my life,</strong>
+                    <span>Fatima&nbsp;May</span>
+                  </div>
+                </div>
+                <div class="envelope-bouquet">
+                  <div class="stem">
+                    <div class="flower"></div>
+                  </div>
+                  <div class="stem">
+                    <div class="flower"></div>
+                  </div>
+                  <div class="stem">
+                    <div class="flower"></div>
+                  </div>
+                  <div class="stem">
+                    <div class="flower"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-ghost js-next" data-next="2">
+                or tap here to continue
+              </button>
+            </div>
+          </section>
+
+          <!-- Screen 2: Long letter -->
+          <section class="screen" data-screen="2">
+            <div class="card">
+              <h2 class="card-heading">My Dearest Fay,</h2>
+              <div class="card-body">
+                I just wanted to take a moment to tell you how much you mean to me.
+                Being around you makes everything feel lighter, and every
+                conversation, laugh, and quiet moment we share is something I truly
+                treasure.
+
+                So before this day goes any further, I want you to know that it
+                would mean a lot to me to spend Valentine's Day with you. With that
+                said, I just have one simple but heartfelt question I've been
+                wanting to ask you.
+              </div>
+              <div class="card-footer">
+                With all my love,<br />
+                Fay
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-primary js-next" data-next="3">
+                Continue
+              </button>
+            </div>
+          </section>
+
+          <!-- Screen 3: WILL / Valentine question -->
+          <section class="screen" data-screen="3">
+            <div class="card will-card">
+              <div class="will-word">Will</div>
+              <div class="will-question">you be my Valentine?</div>
+              <p class="will-sub">
+                There's a blurred little heart in the middle of this screen,&nbsp;
+                <br />
+                but the real one I'm hoping for is yours.
+              </p>
+              <div class="will-heart"></div>
+
+              <div class="btn-row">
+                <button class="btn btn-primary btn-yes" id="js-yes-btn">
+                  Yes
+                </button>
+                <button class="btn btn-ghost btn-no" id="js-no-btn">
+                  No
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Screen 4: Flowers for my Valentine -->
+          <section class="screen" data-screen="4">
+            <div class="card">
+              <div class="flowers-layout">
+                <div>
+                  <h2 class="flowers-text-title">Flowers for my Valentine</h2>
+                  <p class="flowers-text-body">
+                    I'm really looking forward to spending Valentine's Day with you.
+                    Whether near or far, having you as my Valentine is what truly
+                    matters.
+                  </p>
+                  <p class="flowers-text-body" style="margin-top: 8px;">
+                    These little flowers are just a tiny reflection of the warmth
+                    and beauty you bring into my life every single day.
+                  </p>
+                </div>
+                <div class="flowers-illustration">
+                  <div class="bouquet-big">
+                    <div class="stem">
+                      <div class="flower"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="flower"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="flower"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="flower"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-primary js-next" data-next="5">
+                Continue
+              </button>
+            </div>
+          </section>
+
+          <!-- Screen 5: Surprise gifts (empty hearts) -->
+          <section class="screen" data-screen="5">
+            <div class="card">
+              <div class="pill-caption">
+                <span class="icon">🎁</span>
+                Surprise gifts for you
+              </div>
+              <h2 class="card-heading">Surprise gifts for you</h2>
+              <div class="card-body">
+                I hope this brings a smile to your face and reminds you how special
+                you are to me.
+              </div>
+              <div class="gift-grid">
+                <div class="gift-heart gift-heart--empty">
+                  <div class="gift-heart-inner">Gift&nbsp;I</div>
+                </div>
+                <div class="gift-heart gift-heart--empty">
+                  <div class="gift-heart-inner">Gift&nbsp;II</div>
+                </div>
+                <div class="gift-heart gift-heart--empty">
+                  <div class="gift-heart-inner">Gift&nbsp;III</div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-primary js-next" data-next="6">
+                Continue
+              </button>
+            </div>
+          </section>
+
+          <!-- Screen 6: Favorite pictures -->
+          <section class="screen" data-screen="6">
+            <div class="card">
+              <h2 class="card-heading">Favorite Pictures</h2>
+              <div class="card-body">
+                Every photo reminds me why you mean so much to me.
+              </div>
+              <div class="picture-grid">
+                <div class="picture-frame picture--1">
+                  <div class="picture-inner">
+                    <span>Every smile, a memory.</span>
+                  </div>
+                </div>
+                <div class="picture-frame picture--2">
+                  <div class="picture-inner">
+                    <span>Every moment, a blessing.</span>
+                  </div>
+                </div>
+                <div class="picture-frame picture--3">
+                  <div class="picture-inner">
+                    <span>Every glance, a reason.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-primary js-next" data-next="7">
+                Continue
+              </button>
+            </div>
+          </section>
+
+          <!-- Screen 7: Gifts (filled hearts) -->
+          <section class="screen" data-screen="7">
+            <div class="card">
+              <div class="pill-caption">
+                <span class="icon">❤️</span>
+                Surprise gifts for you
+              </div>
+              <h2 class="card-heading">Surprise gifts for you</h2>
+              <div class="card-body">
+                These little hearts stand in for the hugs, memories, and surprises
+                I'm saving for you.
+              </div>
+              <div class="gift-grid">
+                <div class="gift-heart gift-heart--overlay">
+                  <div class="gift-heart-inner">A future date</div>
+                </div>
+                <div class="gift-heart gift-heart--overlay">
+                  <div class="gift-heart-inner">A long warm call</div>
+                </div>
+                <div class="gift-heart gift-heart--overlay">
+                  <div class="gift-heart-inner">A lifetime of love</div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-primary js-next" data-next="8">
+                Continue
+              </button>
+            </div>
+          </section>
+
+          <!-- Screen 8: Song for my Valentine -->
+          <section class="screen" data-screen="8">
+            <div class="card">
+              <div class="song-layout">
+                <div class="disc-wrapper">
+                  <div class="disc"></div>
+                </div>
+                <div>
+                  <h2 class="song-title">Song for my Valentine</h2>
+                  <p class="song-subtitle">
+                    If this card had a soundtrack, it would be every song that
+                    reminds me of you.
+                  </p>
+                  <p class="song-caption">
+                    Proof that distance means nothing when the intention is real.
+                  </p>
+                  <p style="font-size: 0.82rem; margin-top: 10px; color: rgba(76, 0, 46, 0.8);">
+                    (You can add your own song link or playlist here later.)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-primary js-next" data-next="9">
+                Continue
+              </button>
+            </div>
+          </section>
+
+          <!-- Screen 9: Final letter -->
+          <section class="screen" data-screen="9">
+            <div class="card">
+              <div class="final-heading">To my Valentine</div>
+              <div class="card-body">
+                Thank you for being the light in my days and the calm in my storms.
+                For every time you've listened, laughed, encouraged, or simply
+                stayed — I notice it, I feel it, and I am endlessly grateful for it.
+
+                I don't know exactly where life will take us, but I do know this:
+                having you in it makes everything feel softer, brighter, and more
+                meaningful. You are, without a doubt, my favorite blessing.
+              </div>
+              <div class="final-footer">The luckiest person in the world,</div>
+              <div class="final-footer">Fay</div>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn-primary js-next" data-next="1">
+                Replay Love Mail
+              </button>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          Made with all my heart for <span>you</span>.
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
